@@ -1,0 +1,446 @@
+@page {
+  margin-left: 3cm;
+}
+
+html, body {
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 70%;
+  font-style: normal;
+  font-variant: normal;
+}
+
+#wrapper {
+  position: relative;
+  text-align: left;
+  width: 90%;
+  margin:0 auto;
+}
+
+#content {
+  display: block;
+  clear: both;
+}
+
+#footer {
+  text-align: center;
+  padding-top: 5px;
+}
+
+sub, sup {
+  font-size: 90%;
+}
+
+/* ------ global classes ------ */
+
+.left {
+  display: block;
+  float: left;
+  padding-left: 5px;
+  position: relative;
+  top: 0;
+  text-align: left;
+}
+
+.right {
+  display: block;
+  float: right;
+  padding-right: 5px;
+  position: relative;
+  top: 0;
+  text-align: right;
+}
+
+/* All numbers are right-aligned */
+
+.number {
+  text-align: right;
+}
+
+.text {
+  text-align: left;
+}
+
+h1, h2, h3, h4 {
+  text-align: left;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 { font-size: 120%; }
+h2 { font-size: 110%; }
+h3 { font-size: 100%; }
+h4 { font-size: 90%; }
+h5 { font-size: 80%; }
+
+.top_align {
+  vertical-align: top;
+}
+
+/* -------- Masthead ------------ */
+
+#masthead {
+  position: absolute;
+  display: block;
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  height: 92px;
+  border-top: solid 1px #C5C5C5;
+  border-left: solid 1px #C5C5C5;
+  border-right: solid 1px #C5C5C5;
+}
+
+#ccap_logo {
+  position: relative;
+  display: block;
+  float: left;
+  top: 0px;
+  left: 0px;
+  width: 94px;
+  height: 68px;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-right: solid 1px #C5C5C5;
+}
+
+#client_logo {
+  position: relative;
+  display: block;
+  float: left;
+  left: 0px;
+  padding: 5px;
+  padding-bottom: 0;
+  border: none;
+}
+
+#orgname {
+  position: relative;
+  float: left;
+  display: block;
+  top: 10px;
+  left: 0px;
+  width: auto;
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+
+a {
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+
+th a,
+th a:hover {
+  font-weight: bold;
+}
+
+a:hover {
+  background: #7E0F1D;
+  text-decoration: none;
+  width: 100%;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  color: white;
+}
+
+/* ------------------------ Dashboard -------------------------- */
+
+.dashboard_table {
+  float: right;
+  margin-right: 30px;
+}
+
+.dash_title, .dash_units {
+  line-height: 18px;
+  vertical-align: baseline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dash_title {
+  font-size: 14px;
+  display: block;
+  float: left;
+  text-align: left;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.dash_units {
+  display: block;
+  float: right;
+  font-size: 9px;
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  padding-right:10px;
+}
+
+#utilities-header {
+  background: #1E7693;
+  color: white;
+  font-family: Georgia, Times, serif;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.target_table,
+.graphtable {
+  border-collapse: collapse;
+  border-style: solid;
+  border: solid 1px #C5C5C5;
+  background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+}
+
+.target_table {
+  width: auto;
+}
+
+.graph_table {
+  width: 980px;
+}
+
+.target_table th,
+.target_table td,
+.graphtable th,
+.graphtable td {
+  padding: 3px;
+}
+
+.target_table td.targets,
+.graphtable td.targets,
+.target_table td.graph_area,
+.graphtable td.graph_area {
+  padding: 3px;
+  padding-top: 10px;
+  vertical-align: top;
+  width: auto;
+  border: solid 1px #C5C5C5;
+  text-align: center;
+  height: 216px;
+}
+
+.graphtable td.bottom {
+  vertical-align: bottom;
+}
+
+.target_table th,
+.graphtable th {
+  border: solid 1px #C5C5C5;
+  width: auto;
+  height: 38px;
+}
+
+.target_table td.targets,
+.graphtable td.targets {
+  width: auto;
+}
+
+td .notes,
+.notes {
+  font-size: 80%;
+  color: #444;
+  text-align: left;
+  width: 400px;
+  min-width: 400px;
+}
+
+
+.placedetails {
+  border-collapse: collapse;
+  vertical-align: top;
+  width: 479px;
+  height:200px;
+  padding-left:7px;
+  line-height:10px;
+  text-align:left;
+}
+
+.placedetails td {
+  height: 15px;
+  border-bottom:  solid 1px  #C5C5C5;
+}
+
+.details {
+  width: 280px;
+  text-align:left;
+}
+
+/* ---- Reports ---- */
+
+.report_table {
+  border-collapse: collapse;
+  margin: 5px;
+  padding: 0;
+  width: 95%;
+  text-align: left;
+}
+
+.report_table th {
+  border: none;
+  border-bottom: solid 1px #C5C5C5;
+  font-size: 110%;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 2em;
+  vertical-align: baseline;
+  height: 1em;
+}
+
+.report_table th.number {
+  text-align: right;
+}
+
+.total {
+  font-weight: bold;
+  border-bottom: #C5C5C5 1px solid;
+  border-top: #C5C5C5 1px solid;
+}
+
+
+.buttons {
+  position: relative;
+  left: 115px;
+  width: 280px;
+  padding-top: 5px;
+}
+
+.ghg_by_year {
+  border-collapse: collapse;
+  margin: 10px;
+  float: right;
+  padding: 0px;
+  vertical-align: top;
+  font-size: 120%;
+  border: none;
+}
+
+.ghg_by_year tr {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.ghg_by_year td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td.slim {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.ghg_by_year td.year_label  {
+  border: solid 1px black;
+  border-right: none;
+}
+
+.ghg_by_year td.data_label {
+  border: solid 1px black;
+  border-left: none;
+}
+
+.ghg_by_year td.other_label {
+  border: solid 1px black;
+  border-left: none;
+  border-right: none;
+}
+.year_label,
+.other_label,
+.data_label {
+  font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.current_year {
+  font-weight: bold;
+}
+
+.description {
+  display: block;
+  text-align: left;
+  font-size: 120%;
+  width: 200px;
+}
+
+.legend {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+td.legend {
+  border: solid 1px black;
+}
+
+.blank_line {
+  border-left: none 0px;
+  border-right: none 0px;
+}
+
+label {
+  text-transform: uppercase;
+  width: 115px;
+  text-align: right;
+  float: left;
+  padding-right: 5px;
+  font-size: 8px;
+  vertical-align: bottom;
+}
+
+input, select, submit {
+  text-align: left;
+}
+
+input[type=radio] {
+  float: none;
+}
+
+.multiple_choice {
+  display: inline;
+}
+
+.negative {
+  color: red;
+}
+
+
+.excel-table td, th {
+  border-collapse: collapse;
+  border: solid 1px black;
+  padding: 5px;
+}
+
+.excel-table td:hover {
+  background: #C8C8C8;
+  cursor: pointer;
+}

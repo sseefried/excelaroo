@@ -1,0 +1,8 @@
+%table{:class => 'excel-table'}
+  %tr
+    - (@sheet[:first_col]..@sheet[:last_col]).each do |row|
+      %th= Excelx.number_to_letter(row)
+  - (@sheet[:first_row]..@sheet[:last_row]).each do |row|
+    %tr 
+      - (@sheet[:first_col]..@sheet[:last_col]).each do |col|
+        %td= @sheet[:data][row][col]
